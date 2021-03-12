@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+  background-color: #f2f1ed;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+}
+
 body {
   background-color: #fdf6e3;
 }
@@ -20,4 +27,34 @@ nav ul {
 
 #contents, #favs, #facts, #types {
   color: #93a1a1;
+}
+
+.wrapper > .dfn {
+  background-color: #b58900;
+}
+
+.dfn + strong {
+  color: #fff;
+}
+rel="external" {
+  background-color: #2694d8;
+}
+
+ol li {
+  color: #2aa198;
+}
+
+ol li:first-child {
+  color: #719e47;
+}
+
+ol li:last-child {
+  color: #2aa198;
+}
+.types > li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.types > li {
+  background-color: #586e75;
 }
