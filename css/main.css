@@ -1,8 +1,9 @@
 html {
   box-sizing: border-box;
-  background-color: #f2f1ed;
-  font-family: Georgia, serif;
-  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -36,7 +37,12 @@ nav ul {
 .dfn + strong {
   color: #fff;
 }
-rel="external" {
+
+a:not(.no-highlight) {
+  background-color: #719e07;
+}
+
+[rel="external"] {
   background-color: #2694d8;
 }
 
@@ -51,10 +57,19 @@ ol li:first-child {
 ol li:last-child {
   color: #2aa198;
 }
+
 .types > li:nth-child(odd) {
   background-color: #657ba3;
 }
 
-.types > li {
+.types > li:nth-child(even) {
   background-color: #586e75;
+}
+
+.types > li:nth-child(3) {
+  background-color: #d04b16;
+}
+
+.types > li:nth-child(3n) {
+  background-color: #d04b16;
 }
